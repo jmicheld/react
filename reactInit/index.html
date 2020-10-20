@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset='utf-8'>
+    <title>React - Init</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script type="text/babel">
+        //Código React
+        // Declaracao de Variavel
+        let varTeste = "Hello World! JMD";
+
+        // Class para exibicao
+        class Timao extends React.Component{
+            render(){
+                return(
+                    <div>
+                        <h1>{varTeste}</h1>
+                    </div>
+                );
+            }
+        }
+
+        //Rederizacao da classe na tela
+        ReactDOM.render(<Timao />, document.querySelector("#app"));
+    </script>
+</body>
+</html>
